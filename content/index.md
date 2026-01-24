@@ -2,5 +2,17 @@
 title: ritwiksaraf
 ---
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+# about me
+
+
+
+# mission statements
+
+
+
+# Past Projects
+
+
+# Current projects
+
+
