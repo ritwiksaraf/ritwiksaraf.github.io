@@ -41,11 +41,19 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Explorer(),
   ],
   right: [
-    Component.Graph(),
-    Component.DesktopOnly(Component.TableOfContents()),
-    Component.Backlinks(),
+  Component.ConditionalRender({
+    component: Component.DesktopOnly(
+      Component.RecentNotes({
+        title: "Recent Blog Posts",
+        limit: 6,
+        showTags: false,
+        filter: (page) => page.slug !== "index",
+      }),
+    ),
+    condition: (page) => page.fileData.slug === "index",
+  }),
   ],
-}
+  }
 
 // components for pages that display lists of pages  (e.g. tags or folders)
 export const defaultListPageLayout: PageLayout = {
