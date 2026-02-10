@@ -1,4 +1,20 @@
-# Quartz v4
+
+This is the second attempt at creating a website for myself. This is slightly easier as i plan to post directly from my local obsidian vault
+More updates to follow soon
+
+
+
+
+
+
+
+
+
+
+
+---
+# Built With:
+## Quartz v4
 
 > “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
 
