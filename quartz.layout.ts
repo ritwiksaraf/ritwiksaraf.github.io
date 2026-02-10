@@ -8,8 +8,8 @@ export const sharedPageComponents: SharedLayout = {
   afterBody: [],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/jackyzha0/quartz",
-      "Discord Community": "https://discord.gg/cRFFHYye7t",
+      GitHub: "https://github.com/ritwiksaraf",
+      "Linkedin": "https://www.linkedin.com/in/ritwiksaraf/",
     },
   }),
 }
@@ -41,11 +41,19 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Explorer(),
   ],
   right: [
-    Component.Graph(),
-    Component.DesktopOnly(Component.TableOfContents()),
-    Component.Backlinks(),
+  Component.ConditionalRender({
+    component: Component.DesktopOnly(
+      Component.RecentNotes({
+        title: "Recent Blog Posts",
+        limit: 6,
+        showTags: false,
+        filter: (page) => page.slug !== "index",
+      }),
+    ),
+    condition: (page) => page.fileData.slug === "index",
+  }),
   ],
-}
+  }
 
 // components for pages that display lists of pages  (e.g. tags or folders)
 export const defaultListPageLayout: PageLayout = {
