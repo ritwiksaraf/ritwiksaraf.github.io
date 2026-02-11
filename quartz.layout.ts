@@ -38,21 +38,7 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-Component.Explorer({
-  filterFn: (node) => {
-    // Folders become "<folder>/index" in the trie, so handle both.
-    const slug = node.slug
-
-    // Hide the folder itself
-    if (slug === "attachments/index") return false
-
-    // Hide everything under attachments/
-    if (slug.startsWith("attachments/")) return false
-
-    return true
-  },
-}),
-
+    Component.Explorer(),
   ],
   right: [
   Component.ConditionalRender({
@@ -85,21 +71,7 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-Component.Explorer({
-  filterFn: (node) => {
-    // Folders become "<folder>/index" in the trie, so handle both.
-    const slug = node.slug
-
-    // Hide the folder itself
-    if (slug === "attachments/index") return false
-
-    // Hide everything under attachments/
-    if (slug.startsWith("attachments/")) return false
-
-    return true
-  },
-}),
-
+    Component.Explorer(),
   ],
   right: [],
 }
