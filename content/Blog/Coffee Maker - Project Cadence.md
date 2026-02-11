@@ -1,5 +1,5 @@
 ---
-title: Coffee Maker
+title: Coffee Maker - Project Cadence
 tags:
   - Blog
   - Project_Cadence
