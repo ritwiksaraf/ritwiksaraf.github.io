@@ -13,11 +13,7 @@ export const sharedPageComponents: SharedLayout = {
     },
   }),
 }
-export default defineConfig({
-  ignorePatterns: [
-    "attachments/**",
-  ],
-})
+
 // components for pages that display a single page (e.g. a single note)
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
@@ -42,7 +38,21 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer(),
+Component.Explorer({
+  filterFn: (node) => {
+    // Folders become "<folder>/index" in the trie, so handle both.
+    const slug = node.slug
+
+    // Hide the folder itself
+    if (slug === "attachments/index") return false
+
+    // Hide everything under attachments/
+    if (slug.startsWith("attachments/")) return false
+
+    return true
+  },
+}),
+
   ],
   right: [
   Component.ConditionalRender({
@@ -57,6 +67,7 @@ export const defaultContentPageLayout: PageLayout = {
     condition: (page) => page.fileData.slug === "index",
   }),
   ],
+  
   }
 
 // components for pages that display lists of pages  (e.g. tags or folders)
@@ -74,7 +85,21 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer(),
+Component.Explorer({
+  filterFn: (node) => {
+    // Folders become "<folder>/index" in the trie, so handle both.
+    const slug = node.slug
+
+    // Hide the folder itself
+    if (slug === "attachments/index") return false
+
+    // Hide everything under attachments/
+    if (slug.startsWith("attachments/")) return false
+
+    return true
+  },
+}),
+
   ],
   right: [],
 }
