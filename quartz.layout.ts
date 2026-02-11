@@ -13,7 +13,11 @@ export const sharedPageComponents: SharedLayout = {
     },
   }),
 }
-
+export default defineConfig({
+  ignorePatterns: [
+    "attachments/**",
+  ],
+})
 // components for pages that display a single page (e.g. a single note)
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
@@ -47,7 +51,7 @@ export const defaultContentPageLayout: PageLayout = {
         title: "Recent Blog Posts",
         limit: 6,
         showTags: false,
-        filter: (page) => page.slug !== "index",
+        filter: (page) => page.slug !== "index", 
       }),
     ),
     condition: (page) => page.fileData.slug === "index",

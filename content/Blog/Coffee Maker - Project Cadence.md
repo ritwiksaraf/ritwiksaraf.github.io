@@ -15,13 +15,13 @@ I want to build the coffee maker that would make me coffee when i want how i wan
 
 **1. Current Machine**
 
-![[attachments/Pasted image 20260210213856.png]]
+![[content/attachments/Pasted image 20260210213856.png]]
 
 **2**. 
-![[attachments/Pasted image 20260210214002.png]]
+![[content/attachments/Pasted image 20260210214002.png]]
 
 **3.**
-![[attachments/Pasted image 20260210214032.png]]
+![[content/attachments/Pasted image 20260210214032.png]]
 
 ---
 next I plan to do the material design and prototype design first. Hope to keep this blog updated!
