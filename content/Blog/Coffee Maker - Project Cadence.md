@@ -7,6 +7,7 @@ tags:
   - home_automation
 date: 2026-02-10
 ---
+
 ## Problem Statement
 
 I want to build the coffee maker that would make me coffee when i want how i want it and without me asking me to do it. Also i don't want a lot of prep time for the coffee maker - Kinda set it and forget it and look at it once a month deal. 
@@ -30,3 +31,5 @@ Been at it for almost a decade now. i will try and find the photos but my first 
 
 ---
 
+## Project Update: 2/11/2026
+I might also double this out as a tea maker at the same time
