@@ -20,13 +20,13 @@ Been at it for almost a decade now. i will try and find the photos but my first 
 
 **1. Current Machine**
 
-![[quartz/attachments/Pasted image 20260210214002.png]]
+![Pasted image 20260210214032](attachments/Pasted%20image%2020260210214032.png)
 
 **2**. 
-![[quartz/attachments/Pasted image 20260210214002.png]]
+![[attachments/Pasted image 20260210214002.png]]
 
 **3.**
-![[quartz/attachments/Pasted image 20260210214032.png]]
+![[attachments/Pasted image 20260210214032.png]]
 
 ---
 
