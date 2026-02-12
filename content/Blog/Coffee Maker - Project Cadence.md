@@ -21,7 +21,8 @@ Been at it for almost a decade now. i will try and find the photos but my first 
 
 **1. Current Machine**
 
-![Pasted image 20260210214032](attachments/Pasted%20image%2020260210214032.png)
+![[content/attachments/Pasted image 20260210213853 1.png]]
+
 
 **2**. 
 ![[attachments/Pasted image 20260210214002.png]]
